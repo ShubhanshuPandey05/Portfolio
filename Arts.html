@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts</title>
+    
+  <link rel="stylesheet" href="/assets/index-8d820877.css">
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+    
+    .row { /* IE 10 */
+      display: flex; /* IE 10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create two equal columns that sits next to each other */
+    .column { /* IE 10 */
+      flex: 50%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+    </style>
+<body>
+    <main>
+        <div class="flex flex-col justify-center items-center w-[100%] m-auto">
+            <nav>
+                <ul class="flex space-x-5">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li>></li>
+                    <li class=""><a href="index.html/#PROJECT">Projects</a></li>
+                    <li>></li>
+                    <li class=""><a href="index.html">Arts</a></li>
+                </ul>
+            </nav>
+            <div class="w-fit mx-auto my-8"><h1 class="text-3xl">Arts</h1></div>
+            <div class="row"> 
+                <div class="column">
+                  <img src="/assets/Screenshot 2023-11-26 105121-68d9661f.png" style="width:100%">
+                  <img src="/assets/IMG-20231126-WA0001-26011cca.jpg" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105245-8c08fd7a.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105314-8a04bdb6.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105355-cb7ff3c9.png" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/assets/Screenshot 2023-11-26 105424-a9938fe1.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105442-39913756.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105505-9d4e6eb0.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105558-2e0ddb62.png" style="width:100%">
+                </div>  
+                <div class="column">
+                  <img src="/assets/Screenshot 2023-11-26 105535-9900474f.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105643-32b3f7ef.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105701-1a56cf58.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105725-23671588.png" style="width:100%">
+                  <img src="/assets/Screenshot 2023-11-26 105747-c633182f.png" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="/assets/Screenshot 2023-11-26 105153-089991c2.png" style="width:100%">
+                  <img src="/assets/IMG-20231126-WA0002-69bbd815.jpg" style="width:100%">
+                  <img src="/assets/IMG-20231126-WA0003-127d399e.jpg" style="width:100%">
+                  <img src="/assets/IMG-20231126-WA0004-a7e13a9d.jpg" style="width:100%">
+                </div>
+              </div>
+    </main>
+</body>
+<script>
+    var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+</script>
+</html>

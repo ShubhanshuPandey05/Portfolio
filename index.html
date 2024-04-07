@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+  <link rel="stylesheet" href="/assets/index-8d820877.css">
+</head>
+<style>
+    .wraper {
+        display: inline-flex;
+    }
+
+    .dynamic li span {
+        position: relative;
+    }
+
+    .dynamic li span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-left: 2px solid rgb(253 224 71);
+        animation: typing 4s steps(12) infinite;
+        background-color: #1f1f1f;
+
+    }
+
+    /* @keyframes typing {
+        100%{
+            left:100%;
+            margin:0px -20px 0px 20px;
+        }
+    } */
+    .dynamic {
+        overflow: hidden;
+        position: relative;
+        /* margin-left: 15px; */
+        line-height: 36px;
+        height: 36px;
+        /* background-color: aqua; */
+    }
+
+    @keyframes change {
+        100% {
+            top: -109px;
+        }
+    }
+
+    .dynamic li {
+        top: 0;
+        position: relative;
+        animation: change 12s steps(3) infinite;
+    }
+
+    @keyframes typing {
+
+        40%,
+        60% {
+            left: calc(100%);
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
+    .shad {
+        filter: drop-shadow(10px 10px 20px rgb(81, 81, 81));
+    }
+
+    .social a img {
+        filter: saturate(0%);
+    }
+
+    .social a:hover img {
+        filter: saturate(100%);
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #555555;
+        border-radius: 0px;
+    }
+
+    /* For Firefox */
+    /* scrollbar-color: #888 #f1f1f1; */
+
+    /* For Edge and IE */
+    /* scrollbar-width: thin; */
+</style>
+
+<body class="bg-[url('Images/bg-phone.png')] bg-no-repeat">
+    <main class="md:hidden">
+        <div>
+            <header class="w-full mt-12" dir="rtl">
+                <button class="text-3xl text-white  mr-12"
+                    onclick="document.getElementById('nav').style.display='block'">︙</button>
+                <div id="nav" class="hidden h-screen fixed bg-gray-800 top-0 pl-20 z-10">
+                    <button class="text-xl text-white  mr-12 mt-14"
+                        onclick="document.getElementById('nav').style.display='none'">✖</button>
+                    <nav class="w-fit">
+                        <div class="m-auto w-fit">
+                            <ul class="m-auto mt-10">
+                                <li class="text-white hover:text-yellow-300 cursor-pointer h-fit m-10 mr-16"><a
+                                        href="#ETHICS" onclick="document.getElementById('nav').style.display='none'">ETHICS</a></li>
+                                <li class="text-white hover:text-yellow-300 cursor-pointer h-fit m-10 mr-16"><a
+                                        href="#PROJECTS" onclick="document.getElementById('nav').style.display='none'">PROJECTS</a></li>
+                                <li class="text-white hover:text-yellow-300 cursor-pointer h-fit m-10 mr-16"><a
+                                        href="#ABOUT" onclick="document.getElementById('nav').style.display='none'">ABOUT</a></li>
+                                <li class="text-white hover:text-yellow-300 cursor-pointer h-fit m-10 mr-16"><a
+                                        href="#CONTACT" onclick="document.getElementById('nav').style.display='none'">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div dir="ltr">
+                    <div class="w-fit m-auto">
+                        <!-- <div class="bg-[url('Images/shubhanshu1.svg')] h-40 w-20"></div> -->
+                        <div class="static font-bold text-white text-3xl mt-24">Hello!</div>
+                        <div class="wraper w-fit">
+                            <div class="static font-bold text-white text-3xl">I am</div>
+                            <div class="dynamic ml-2">
+                                <li class="list-none font-bold text-yellow-300 text-3xl"><span>WEB DESIGNER</span></li>
+                                <li class="list-none font-bold text-yellow-300 text-3xl"><span>FREELANCER</span></li>
+                                <li class="list-none font-bold text-yellow-300 text-3xl"><span>ARTIST</span></li>
+                            </div>
+                        </div>
+                        <div class="text-white mt-10 text-left">
+                            I'm Shubhanshu, a freelance UI/UX designer<br> based in India.I craft accessible websites for
+                            <br>brands using tech for good.
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </main>
+    <main class=" hidden md:block md:m-0 md:p-0">
+        <header class="md:m-0 md:pt-20 md:h-[50rem] md:bg-[url('Images/bg.png')] md:bg-cover md:bg-center lg:h-screen ">
+            <nav class="md:w-screen">
+                <div class="md:m-auto md:w-fit">
+                    <ul class="md:flex md:space-x-6 md:m-auto">
+                        <li class="md:text-white md:hover:text-yellow-300 md:cursor-pointer md:h-fit"><a href="#ETHIC">ETHICS</a></li>
+                        <li class="md:text-white md:hover:text-yellow-300 md:cursor-pointer md:h-fit"><a href="#PROJECT">PROJECTS</a></li>
+                        <li class="md:text-white md:hover:text-yellow-300 md:cursor-pointer md:h-fit"><a href="#ABOUT">ABOUT</a></li>
+                        <li class="md:text-white md:hover:text-yellow-300 md:cursor-pointer md:h-fit"><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="md:mx-auto md:flex  md:items-center md:relative md:overflow-hidden md:mt-20 w-[70%]  ">
+                <div>
+                    <div class="wraper  md:w-fit md:mt-24">
+                        <div class="static md:font-bold md:text-white md:text-3xl">I am</div>
+                        <div class="dynamic md:ml-2">
+                            <li class="md:list-none md:font-bold md:text-yellow-300 md:text-3xl"><span>WEB DESIGNER</span></li>
+                            <li class="md:list-none md:font-bold md:text-yellow-300 md:text-3xl"><span>FREELANCER</span></li>
+                            <li class="md:list-none md:font-bold md:text-yellow-300 md:text-3xl"><span>ARTIST</span></li>
+                        </div>
+                    </div>
+                    <div class=" md:w-fit md:text-white md:mt-10">
+                        I'm Shubhanshu, a freelance UI/UX designer<br> based in India.I craft accessible websites for
+                        <br>brands using tech for good.
+                    </div>
+                </div>
+                <div class="md:rounded-header md:overflow-hidden">
+                    <img src="/assets/shubhanshu1-f38158f4.svg" alt="" class="h-96 md:absolute bottom-[-120px] lg:right-10 shad " >
+                </div>
+            </div>
+        </header>
+    </main>
+    <main class="mt-64 md:hidden">
+        <div class="text-center">
+            <section id="ETHICS" class="">
+                <h1 class="font-bold text-4xl text-black m-auto">ETHICS</h1>
+                <div class="flex mt-16 justify-center flex-col w-full">
+                    <div class=" bg-slate-50 p-5 rounded-lg w-fit m-auto">
+                        <h1 class="text-2xl font-bold text-center my-4">
+                            Accessible design
+                        </h1>
+                        A great website is designed for all people by <br> default. That means considering people who
+                        use <br>
+                        assistive technology and being mindful of <br> everyone's ability to process information.
+                    </div>
+                    <div class=" bg-slate-50 p-5 rounded-lg mt-10 w-fit m-auto">
+                        <h1 class="text-2xl font-bold text-center my-4">
+                            Ethical design
+                        </h1>
+                        An ethical website prioritizes transparency over <br> agenda. It clearly communicates the
+                        purpose, <br> benefits and potential risks associated with your site.
+                    </div>
+                    <div class=" bg-slate-50 p-5 rounded-lg mt-10 w-fit m-auto">
+                        <h1 class="text-2xl font-bold text-center my-4">
+                            Sustainable design
+                        </h1>
+                        The web isn't green. Reducing how much data we <br>store, how many emails we send, and how heavy
+                        <br>our pages are serves people's experience as well <br>as the planet.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <main class="hidden md:block md:mt-[-70px]">
+        <div class="md:text-center">
+            <section id="ETHIC" class="">
+                <h1 class="md:font-bold md:text-4xl md:text-black md:m-auto">ETHICS</h1>
+                <div class="md:flex md:mt-16 md:justify-center">
+                    <div class="md:text-left md:mx-5 md:bg-slate-50 md:p-5 md:rounded-lg ">
+                        <h1 class="md:text-2xl md:font-bold md:text-center md:my-4">
+                            Accessible design
+                        </h1>
+                        A great website is designed for all people by <br> default. That means considering people who use <br>
+                        assistive technology and being mindful of <br> everyone's ability to process information.
+                    </div>
+                    <div class="md:text-left md:mx-5 md:bg-slate-50 md:p-5 md:rounded-lg">
+                        <h1 class="md:text-2xl md:font-bold md:text-center md:my-4">
+                            Ethical design
+                        </h1>
+                        An ethical website prioritizes transparency over <br> agenda. It clearly communicates the purpose, <br> benefits and potential risks associated with your site.
+                    </div>
+                    <div class="md:text-left md:mx-5 md:bg-slate-50 md:p-5 md:rounded-lg">
+                        <h1 class="md:text-2xl md:font-bold md:text-center md:my-4">
+                            Sustainable design
+                        </h1>
+                        The web isn't green. Reducing how much data we <br>store, how many emails we send, and how heavy <br>our pages are serves people's experience as well <br>as the planet.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <main class="md:hidden">
+        <section id="PROJECTS">
+        <h1 class="font-bold text-4xl text-black m-auto text-center mt-20">PROJECTS</h1>
+        <div class="flex mt-20 flex-col">
+            <div class="w-full h-72 flex justify-center items-center cursor-pointer text-center text-white font-bold hover:underline text-3xl bg-center bg-[url('https://media.istockphoto.com/id/1425118224/photo/location-world-map-navigation-pin-point-graphic-3d-illustration-locator.webp?b=1&s=170667a&w=0&k=20&c=so8vTZP44fh4GI-tZxXTL2gqe27qYA9kbNLQDYq82Ns=')]"><a href="Websites.html">WEB DESIGNS</a></div>
+            <div class="w-full h-72 flex justify-center items-center cursor-pointer text-center text-white font-bold hover:underline text-3xl bg-center bg-[url('https://imgs.search.brave.com/xhd7bCpnfHjECMh-_BgTdWBBqy0dgy9HxperiQNGNb4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTUzNzg3OTEwMzYt/MDY0OGEzZWY3N2Iy/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRCOGZH/TmhjbVZsY254bGJu/d3dmSHd3Zkh4OE1B/PT0')]"><a href="Freelancer.html">FREELANCING</a></div>
+            <div class="w-full h-72 flex justify-center items-center cursor-pointer text-center text-white font-bold hover:underline text-3xl bg-center bg-[url('https://imgs.search.brave.com/Is-KLWUKv8rzbRF_4aUcjGkq4TbkhrtT3u5vB_kpL10/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9w/ZW5jaWwtc2tldGNo/LWJhY2tncm91bmRf/MTQwOS0xNDc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn')]"><a href="Arts.html">ARTS</a></div>
+        </div>
+      </section>
+      </main>
+      <main class="hidden md:block">
+        <section id="PROJECT">
+        <h1 class="md:font-bold md:text-4xl md:text-black md:m-auto md:text-center md:mt-20">PROJECTS</h1>
+        <div class="md:flex md:flex-wrap md:mt-20">
+            <div class="md:w-1/2 md:p-48 cursor-pointer md:text-center md:text-white md:font-bold md:hover:underline md:text-3xl bg-no-repeat bg-cover bg-[url('https://media.istockphoto.com/id/1425118224/photo/location-world-map-navigation-pin-point-graphic-3d-illustration-locator.webp?b=1&s=170667a&w=0&k=20&c=so8vTZP44fh4GI-tZxXTL2gqe27qYA9kbNLQDYq82Ns=')]"><a href="Websites.html">WEB DESIGNS</a></div>
+            <div class="md:w-1/2 md:p-48 cursor-pointer md:text-center md:text-white md:font-bold md:hover:underline md:text-3xl bg-no-repeat bg-cover bg-[url('https://imgs.search.brave.com/xhd7bCpnfHjECMh-_BgTdWBBqy0dgy9HxperiQNGNb4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTUzNzg3OTEwMzYt/MDY0OGEzZWY3N2Iy/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRCOGZH/TmhjbVZsY254bGJu/d3dmSHd3Zkh4OE1B/PT0')]"><a href="Freelancer.html">FREELANCING</a></div>
+            <div class="md:w-full md:p-44 cursor-pointer md:text-center md:text-white md:font-bold md:hover:underline md:text-3xl bg-no-repeat bg-cover bg-[url('https://imgs.search.brave.com/Is-KLWUKv8rzbRF_4aUcjGkq4TbkhrtT3u5vB_kpL10/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9w/ZW5jaWwtc2tldGNo/LWJhY2tncm91bmRf/MTQwOS0xNDc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn')]"><a href="Arts.html">ARTS</a></div>
+        </div>
+    </section>
+    </main>
+    <main>
+        <section id="ABOUT">
+            <h1 class="font-bold text-4xl text-black m-auto text-center mt-20">ABOUT</h1>
+            <div class="flex mt-16 justify-center w-[90%] m-auto flex-col md:flex-row">
+                <div class="text-left m-auto p-5 rounded-lg w-full md:w-1/2 md:mx-20">
+                    <h1 class="text-2xl font-bold my-4">
+                        Background
+                    </h1>
+                    At 18, I'm already knee-deep in the world of B.Tech in Computer Science, fueled by an insatiable curiosity for turning complex problems into elegant solutions. My journey is not just about textbooks; it's a hands-on exploration of the boundless possibilities within the realm of computer science. <br><br>
+      
+                    Diving beyond the theoretical, my portfolio showcases a collection of projects that go beyond classroom assignments. From web development to my other profession, each project is a testament to my commitment to practical learning and pushing the boundaries of what's possible.
+                </div>
+                <div class="text-left mx-auto p-5 rounded-lg w-full md:w-1/2 md:mx-20">
+                    <h1 class="text-2xl font-bold my-4">
+                        Availabilities
+                    </h1>
+                    I'm currently dedicated to a full-time project for the next year or so. But I'd be happy to consider
+                    smaller consulting gigs,
+      
+                    Please feel free to get in touch if you'd like to discuss how I can assist you.
+      
+                    (Last updated November 2023)
+                </div>
+            </div>
+        </section>
+      </main>
+      <main>
+        <section id="CONTACT">
+            <h1 class="font-bold text-4xl text-black m-auto text-center mt-20">Contact</h1>
+            <div class="flex w-[90%] justify-center m-auto space-x-14 pt-10 md:space-x-28">
+                <div><img src="/assets/Screenshot 2023-11-22 203706-c4dc5868.png" class="h-12 md:h-16 m-auto" alt="">
+                    <p class="text-center mt-5"><b>Phone no</b>:-<br>7897226372</p>
+                </div>
+                <div><a href="mailto:shubhanshu855@gmail.com"><img src="/assets/Screenshot 2023-11-22 203816-0eb7b323.png" class="h-9 md:h-12 md:mt-4 m-auto" alt="">
+                    <p class="text-center mt-5"><b>Email us</b></a></p>
+                </div>
+                <div><img src="/assets/Screenshot 2023-11-22 203947-8508f096.png" class="h-12 md:h-16 m-auto" alt="">
+                    <p class="text-center mt-[18px]"><b>Social</b><br></p>
+                    <div class="flex m-auto social"><a href="https://instagram.com/artistic_052?igshid=NzZlODBkYWE4Ng=="><img src="/assets/Screenshot 2023-11-22 212947-236c4147.png"
+                                alt="" class="h-8"></a>
+                        <a href="https://wa.me/+917897226372"><img src="/assets/Screenshot 2023-11-22 213057-fc3c8af7.png" alt="" class="h-8"></a>
+                        <a href="#"><img src="/assets/Screenshot 2023-11-22 213136-58d99878.png" alt="" class="h-8"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+      <main>
+        <div class="m-auto w-fit mt-20 underline font-bold text-xl cursor-pointer"><a href="/assets/Shubhanshu'sResume.pdf">Resume</a></div>
+        <footer class="bg-gray-900 text-white py-2 mt-16 text-sm">
+            <div class="m-auto w-fit">Copyright © 2023 theshubhanshu.com | Privacy Policy</div>
+        </footer>
+      </main>
+</body>
+
+</html>
+
+<!-- src="/assets/shubhanshu1-f38158f4.svg" -->
